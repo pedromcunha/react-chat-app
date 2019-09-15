@@ -1,0 +1,68 @@
+.chat-input {
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #00C397;
+}
+
+.input:focus,
+.send-button:focus {
+  outline: 0;
+}
+
+.remaining-character-count,
+.input {
+  color: #B1BEBE;
+}
+
+.input {
+  flex: 1;
+  font-size: 14px;
+  word-break: break-all;
+  overflow-y: auto;
+  max-height: 75%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.input::placeholder {
+  color: #B1BEBE;
+  font-style: 'Roboto';
+}
+
+.input[contentEditable=true]:empty:not(:focus):before {
+  content:attr(data-text) 
+}
+
+.input::-webkit-scrollbar {
+  display: none;
+}
+
+.remaining-character-count {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.remaining-character-count.error {
+  color: red;
+} 
+
+.send-button {
+  height: 100%;
+  width: 80px;
+  border: 0;
+  background: #fff;
+}
+
+.send-button-image {
+  width: 25px;
+}
+
+.send-button-image polygon {
+  transition: 0.5s fill;
+}
+
+.send-button-active polygon {
+  fill: #00C397;
+}

@@ -1,0 +1,14 @@
+.chat-list {
+  flex: 1;
+  overflow-y: scroll;
+  padding-top: 20px;
+  scroll-behavior: smooth;
+}
+
+.chat-comment-enter, .chat-comment-appear {
+  opacity: 0;
+}
+.chat-comment-enter-active, .chat-comment-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s;
+}

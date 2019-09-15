@@ -1,0 +1,8 @@
+// types.js
+const FETCHED_CHATROOM = 'FETCHED_CHATROOM';
+const SEND_COMMENT = 'SEND_COMMENT';
+
+export default {
+  FETCHED_CHATROOM,
+  SEND_COMMENT,
+}
